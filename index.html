@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Participant registration for the Consultation on Access to Empowerment in Bhubaneswar.">
+  <title>Consultation on Access to Empowerment | Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="nasscom-mark" href="#main-content" aria-label="NASSCOM Foundation home">
+        <img src="assets/nasscom-foundation-logo.png" alt="NASSCOM Foundation">
+      </a>
+      <div class="header-rule" aria-hidden="true"></div>
+      <a class="cini-mark" href="#main-content" aria-label="CINI home">
+        <img src="assets/cini-logo.png" alt="CINI">
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="event-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A state consultation · Odisha</p>
+        <h1 id="event-title">Consultation on<br><em>Access to Empowerment</em></h1>
+        <p class="hero-description">E-Governance for PVTGs and Marginalized Communities</p>
+      </div>
+
+      <aside class="event-card" aria-label="Event details">
+        <p class="card-kicker">Save the date</p>
+        <div class="event-detail">
+          <span class="detail-icon" aria-hidden="true">◷</span>
+          <div><span class="detail-label">Date</span><strong>25 September 2026</strong></div>
+        </div>
+        <div class="event-detail">
+          <span class="detail-icon" aria-hidden="true">◴</span>
+          <div><span class="detail-label">Time</span><strong>10:30 AM</strong></div>
+        </div>
+        <div class="event-detail">
+          <span class="detail-icon" aria-hidden="true">⌖</span>
+          <div><span class="detail-label">Venue</span><strong>Hotel Excellency, Bhubaneswar</strong></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="registration-section" aria-labelledby="registration-title">
+      <div class="section-heading">
+        <p class="section-number">01 <span></span> Registration</p>
+        <h2 id="registration-title">Participant Registration</h2>
+        <p>Please provide the following details to register for the consultation.</p>
+      </div>
+
+      <form id="registration-form" novalidate>
+        <div class="form-card">
+          <div class="form-grid">
+            <div class="field full-width">
+              <label for="fullName">Full Name <span class="required" aria-hidden="true">*</span></label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required>
+              <p class="error-message" id="fullName-error"></p>
+            </div>
+            <div class="field">
+              <label for="designation">Designation <span class="required" aria-hidden="true">*</span></label>
+              <input id="designation" name="designation" type="text" autocomplete="organization-title" required>
+              <p class="error-message" id="designation-error"></p>
+            </div>
+            <div class="field">
+              <label for="organisation">Organisation / Department <span class="required" aria-hidden="true">*</span></label>
+              <input id="organisation" name="organisation" type="text" autocomplete="organization" required>
+              <p class="error-message" id="organisation-error"></p>
+            </div>
+            <div class="field">
+              <label for="organisationType">Type of Organisation <span class="required" aria-hidden="true">*</span></label>
+              <select id="organisationType" name="organisationType" required>
+                <option value="">Select organisation type</option>
+                <option>Government Department</option>
+                <option>District Administration</option>
+                <option>PRI / Local Government</option>
+                <option>NGO / CSO</option>
+                <option>Community-Based Organisation</option>
+                <option>Academic / Research Institution</option>
+                <option>Corporate / Private Sector</option>
+                <option>Development Partner / Foundation</option>
+                <option>Media</option>
+                <option>Other</option>
+              </select>
+              <p class="error-message" id="organisationType-error"></p>
+            </div>
+            <div class="field">
+              <label for="state">State <span class="required" aria-hidden="true">*</span></label>
+              <input id="state" name="state" type="text" value="Odisha" readonly aria-readonly="true">
+            </div>
+            <div class="field">
+              <label for="district">District <span class="required" aria-hidden="true">*</span></label>
+              <select id="district" name="district" required>
+                <option value="">Select district</option>
+                <option>Angul</option><option>Balangir</option><option>Balasore</option><option>Bargarh</option>
+                <option>Bhadrak</option><option>Boudh</option><option>Cuttack</option><option>Dhenkanal</option>
+                <option>Gajapati</option><option>Ganjam</option><option>Jagatsinghpur</option><option>Jajpur</option>
+                <option>Jharsuguda</option><option>Kalahandi</option><option>Kandhamal</option><option>Kendrapara</option>
+                <option>Kendujhar</option><option>Khordha</option><option>Koraput</option><option>Malkangiri</option>
+                <option>Mayurbhanj</option><option>Nabarangpur</option><option>Nayagarh</option><option>Nuapada</option>
+                <option>Puri</option><option>Rayagada</option><option>Sambalpur</option><option>Subarnapur</option>
+                <option>Sundargarh</option>
+              </select>
+              <p class="error-message" id="district-error"></p>
+            </div>
+            <div class="field">
+              <label for="block">Block <span class="optional">Optional</span></label>
+              <select id="block" name="block" disabled>
+                <option value="">Select a district first</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+              <p class="error-message" id="email-error"></p>
+            </div>
+            <div class="field">
+              <label for="mobileNumber">Mobile Number <span class="required" aria-hidden="true">*</span></label>
+              <input id="mobileNumber" name="mobileNumber" type="tel" autocomplete="tel" inputmode="numeric" placeholder="10-digit mobile number" required>
+              <p class="error-message" id="mobileNumber-error"></p>
+            </div>
+            <div class="field">
+              <label for="alternateContactNumber">Alternate Contact Number <span class="optional">Optional</span></label>
+              <input id="alternateContactNumber" name="alternateContactNumber" type="tel" inputmode="numeric" placeholder="10-digit mobile number">
+              <p class="error-message" id="alternateContactNumber-error"></p>
+            </div>
+          </div>
+        </div>
+
+        <section class="consent-panel" aria-labelledby="consent-title">
+          <div class="panel-heading">
+            <p class="section-number">02 <span></span> Consent</p>
+            <h2 id="consent-title">Communication &amp; Documentation Consent</h2>
+          </div>
+          <fieldset>
+            <legend class="sr-only">Choose documentation consent</legend>
+            <label class="choice-row">
+              <input type="radio" name="documentationConsent" value="consent" required>
+              <span class="custom-radio" aria-hidden="true"></span>
+              <span>I consent to photographs/videos/audio recordings of me being taken during the event for documentation, reporting and communication related to the programme.</span>
+            </label>
+            <label class="choice-row">
+              <input type="radio" name="documentationConsent" value="decline">
+              <span class="custom-radio" aria-hidden="true"></span>
+              <span>I do not wish to be photographed/video recorded.</span>
+            </label>
+          </fieldset>
+          <p class="error-message" id="documentationConsent-error"></p>
+          <p class="purpose-note">Data will only be used for the purpose of participation validation for the consultation.</p>
+        </section>
+
+        <section class="signature-panel" aria-labelledby="signature-title">
+          <div class="panel-heading signature-heading">
+            <div>
+              <p class="section-number">03 <span></span> Confirmation</p>
+              <h2 id="signature-title">Digital Signature</h2>
+            </div>
+            <span class="optional">Required</span>
+          </div>
+          <p class="signature-note">Please sign inside the box above.</p>
+          <div class="signature-wrap">
+            <canvas id="signature-pad" aria-label="Digital signature drawing area"></canvas>
+            <span class="signature-line" aria-hidden="true"></span>
+            <span class="signature-placeholder" aria-hidden="true">Sign here</span>
+          </div>
+          <p class="error-message" id="digitalSignature-error"></p>
+          <button class="text-button" id="clear-signature" type="button">Clear signature <span aria-hidden="true">↗</span></button>
+        </section>
+
+        <div class="submit-row">
+          <div>
+            <label class="timestamp-label" for="submissionDateTime">Date &amp; Time</label>
+            <input id="submissionDateTime" type="text" value="Captured on submission" readonly>
+          </div>
+          <button class="submit-button" type="submit">Submit Registration <span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="success-state" id="success-state" hidden aria-labelledby="success-title">
+      <span class="success-mark" aria-hidden="true">✓</span>
+      <p class="eyebrow">Registration received</p>
+      <h2 id="success-title">Registration Submitted Successfully</h2>
+      <p>Thank you for registering for the Consultation on Access to Empowerment.</p>
+      <div class="success-details"><strong>25 September 2026</strong><span>Hotel Excellency, Bhubaneswar, Odisha</span></div>
+      <small>This is a frontend confirmation. Your details are ready for the future CINI server integration.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Consultation on Access to Empowerment</span><span>© 2026 CINI × NASSCOM Foundation</span></footer>
+</body>
+</html>
